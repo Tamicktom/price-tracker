@@ -11,3 +11,5 @@ const db = drizzle({
   client: sqlite,
   schema,
 });
+
+export { db, schema };
