@@ -1,6 +1,6 @@
 //* Libraries imports
 import { Elysia, t } from 'elysia';
-import { ilike, eq } from 'drizzle-orm';
+import { ilike } from 'drizzle-orm';
 
 //* Local imports
 import { db, schema } from '@/database';
