@@ -20,7 +20,8 @@ storesRoutes.group('/stores', (app) => {
             search ? ilike(schema.storesTable.name, `%${search}%`) : undefined
           )
           .limit(limit)
-          .offset((page - 1) * limit);
+          .offset((page - 1) * limit)
+          .orderBy(schema.storesTable.createdAt);
 
         return stores;
       },
