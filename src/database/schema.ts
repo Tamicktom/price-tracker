@@ -42,7 +42,6 @@ export const pricesTable = sqliteTable('prices', {
 
   productId: integer('product_id').notNull().references(() => productsTable.id, { onDelete: 'cascade' }),
   storeId: integer('store_id').notNull().references(() => storesTable.id, { onDelete: 'cascade' }),
-  linkId: integer('link_id').notNull().references(() => linksTable.id, { onDelete: 'cascade' }),
 
   price: real('price').notNull(),
 
